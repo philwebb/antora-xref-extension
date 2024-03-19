@@ -37,7 +37,7 @@ echo -e "//registry.npmjs.org/:_authToken=$RELEASE_NPM_TOKEN" > $HOME/.npmrc
 # release!
 (
   set -e
-  npm version --no-git-tag-version $RELEASE_VERSION
+  npm version --workspaces --include-workspace-root --no-git-tag-version $RELEASE_VERSION
   RELEASE_VERSION=$(npm exec -c 'echo -n $npm_package_version')
   if case $RELEASE_VERSION in 1.0.0-*) ;; *) false;; esac; then
     RELEASE_NPM_TAG=latest
