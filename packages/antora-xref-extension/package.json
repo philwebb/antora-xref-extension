@@ -20,12 +20,10 @@
         "lib"
     ],
     "engines": {
-      "node": ">=16.0.0"
+        "node": ">=16.0.0"
     },
-    "dependencies": {
-    },
-    "devDependencies": {
-    },
+    "dependencies": {},
+    "devDependencies": {},
     "keywords": [
         "antora",
         "antora-extension",
@@ -33,5 +31,4 @@
         "asciidoctor",
         "documentation"
     ]
-  }
-  
+}
