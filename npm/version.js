@@ -28,7 +28,7 @@ function updateChangelog (releaseDate) {
 function updatePackageLock () {
   return fsp.readdir(PACKAGES_DIR, { withFileTypes: true }).then((dirents) => {
     const packageNames = dirents.filter((dirent) => dirent.isDirectory()).map(({ name }) => name)
-    const moduleNames = packageNames.map((name) => (name === 'antora' ? name : `@antora/${name}`))
+    const moduleNames = packageNames.map((name) => `@springio/${name}`)
     const packagePaths = packageNames.map((name) => `packages/${name}`)
     const gitAddPaths = ['package-lock.json']
     const writes = []
