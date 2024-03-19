@@ -5,19 +5,19 @@
     "license": "Apache-2.0",
     "author": "Spring (https://spring.io)",
     "contributors": [
-      "Phillip Webb <phil.webb@broadcom.com>"
+        "Phillip Webb <phil.webb@broadcom.com>"
     ],
     "homepage": "github:/spring-io/antora-xref-extension",
     "repository": "github:/spring-io/antora-xref-extension",
     "bugs": {
-      "url": "https://github.com/spring-io/antora-xref-extension/issues"
+        "url": "https://github.com/spring-io/antora-xref-extension/issues"
     },
     "main": "lib/index.js",
     "exports": {
-      ".": "./lib/index.js"
+        ".": "./lib/index.js"
     },
     "files": [
-      "lib"
+        "lib"
     ],
     "engines": {
       "node": ">=16.0.0"
@@ -27,11 +27,11 @@
     "devDependencies": {
     },
     "keywords": [
-      "antora",
-      "antora-extension",
-      "asciidoc",
-      "asciidoctor",
-      "documentation"
+        "antora",
+        "antora-extension",
+        "asciidoc",
+        "asciidoctor",
+        "documentation"
     ]
   }
   
