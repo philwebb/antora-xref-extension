@@ -65,7 +65,6 @@ function updatePackageLock () {
 
 ;(async () => {
   const releaseDate = getCurrentDate().toISOString().split('T')[0]
-  await updateDocsConfig(releaseDate)
   await updateChangelog(releaseDate)
   await updatePackageLock()
 })()
